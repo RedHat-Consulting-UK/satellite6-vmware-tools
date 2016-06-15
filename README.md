@@ -26,3 +26,4 @@ Once that has been complete, make sure the product and module has been added to 
 
 If content view has been published/promoted correctly and the module has been added correctly, you should now be able to add the vmware-tools puppet module to hosts/hostgroups or to hiera config files. 
 
+Note: the original version of this module assumed you had not put the module onto physical machines, otherwise it would be installed on those. The module has now been modified so that it will not install on physical boxes and will attempt to remove the open-vm-tools or vmware tools RPMs and configs from physical boxes if they are installed. 
