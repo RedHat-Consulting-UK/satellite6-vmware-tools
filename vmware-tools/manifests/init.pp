@@ -8,7 +8,13 @@ class vmware-tools {
  		   /^7.*/: {
 			package { 'open-vm-tools': 
 				ensure => 'latest',
-			}                        
+				notify => Service['vmtoolsd'], 
+				before => Service['vmtoolsd'], 
+			} 
+			service { 'vmtoolsd': 
+				ensure => 'running', 
+				enabled => true, 
+			}                       
                    }
 		   /^6.*/: {
         		package { 'vmware-tools-esx-kmods':
