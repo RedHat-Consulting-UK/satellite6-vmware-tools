@@ -1,6 +1,6 @@
 {
 	"name": "vmware-tools",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Calvin Hartwell",
 	"summary": "Satellite 6 vmware tools puppet module",
 	"license": "BSD 2.0",
